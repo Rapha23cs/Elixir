@@ -1,0 +1,12 @@
+<header class="navbar bg-base-100 shadow-md px-6">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl font-bold text-primary">📝 Todo List - Elixir</a>
+  </div>
+  <div class="flex-none gap-2">
+    <span class="badge badge-accent badge-outline font-mono text-xs">Phoenix LiveView</span>
+  </div>
+</header>
+<main class="container mx-auto px-4 py-8 max-w-3xl">
+  <.flash_group flash={@flash} />
+  <%= @inner_content %>
+</main>
